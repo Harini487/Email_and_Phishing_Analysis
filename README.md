@@ -13,7 +13,12 @@ The project demonstrates practical skills in:
 - URL and domain reputation analysis (VirusTotal, Cisco Talos, DomainTools)
 - Malicious attachment analysis and OLE/VBA macro extraction
 - Threat intelligence reporting and IOC documentation
-- Use of professional tools: PhishTool, eioc.py [https://github.com/MalwareCube/Email-IOC-Extractor], emldump.py [https://github.com/DidierStevens/DidierStevensSuite/blob/master/emldump.py], oledump.py [https://github.com/DidierStevens/DidierStevensSuite/blob/master/oledump.py] , nslookup and dig
+- Use of professional tools:
+  * PhishTool
+  * eioc.py [https://github.com/MalwareCube/Email-IOC-Extractor]
+  * emldump.py [https://github.com/DidierStevens/DidierStevensSuite/blob/master/emldump.py]
+  * oledump.py [https://github.com/DidierStevens/DidierStevensSuite/blob/master/oledump.py] 
+  * nslookup and dig
 ---
  
 ## 🗂️ Repository Structure
