@@ -1,0 +1,86 @@
+Headers
+======================================
+Date: Fri, 28 Jul 2023 21:25:06 +0000
+Subject: Important: You phone number has been changed - Case# 83899065
+
+To: phishing@pot
+From: noreply-coinbasewalletverifiying.irs.mantab@shangriladogchew.com
+
+Reply-To: None
+Return-Path: 010b01899e641610-7339abbc-6cab-4df3-8f67-9a50ec1f5fd1-000000@eu-west-2.amazonses.com
+
+Sender IP: 23.249.218.14
+Resolve Host: d218-14.smtp-out.eu-west-2.amazonses.com 
+
+Message-ID: <010b01899e641610-7339abbc-6cab-4df3-8f67-9a50ec1f5fd1-000000@eu-west-2.amazonses.com>
+
+IP Addresses:
+====================================
+23[.]249[.]218[.]14 - Seattle, Washington, US, ISP: AS16509 Amazon.com, Inc.
+10[.]152[.]29[.]182
+
+
+URLs
+======================================
+hxxps[://]amedyna[.]com/
+http://www[.]w3[.]org/TR/xhtml1/DTD/xhtml1-transitional[.]dtd
+hxxps[://]gbmowers[.]co[.]uk/-blue[.]png
+http://www[.]w3[.]org/1999/xhtml
+hxxps[://]clicks[.]bitvavo[.]com/q/lNf8Xi_M6Wxuqq9H_SDkYw
+
+
+Attachments
+======================================
+None
+
+
+Description
+======================================
+A fraudulent email impersonating Coinbase, falsely alerting the recipient of suspicious account activity and an unauthorized phone number change (Case# 83899065). 
+
+It presents fabricated login details (IPv6 address, Netherlands location, Chrome/Windows browser) to create urgency and tricks the victim into clicking a 'Secure My Account' button that redirects to an attacker-controlled phishing domain.
+
+
+Artifact Analysis
+======================================
+Sender Analysis:
+The sender address "noreply-coinbasewalletverifiying.irs.mantab@shangriladogchew.com" is clearly fraudulent — legitimate Coinbase emails originate exclusively from @coinbase.com domains. 
+
+The address contains multiple red flags: misspelling of 'verifying', injection of 'irs' to imply authority, and use of a completely unrelated domain 'shangriladogchew.com'. 
+
+
+URL Analysis:
+The 'Secure My Account' button links to "https://amedyna.com/", confirmed malicious by VirusTotal. 
+
+The low detection rate suggests the domain is newly registered or recently weaponized, a common tactic to evade blocklists. 
+
+The domain has no affiliation with Coinbase. The hoverable URL visible in the email footer (https://amedyna.com/) further confirms the button destination is attacker-controlled and designed to harvest Coinbase credentials
+
+
+Attachment Analysis:
+None
+
+
+Verdict
+======================================
+The email exhibits multiple critical indicators: spoofed sender domain impersonating Coinbase, fabricated suspicious activity alert with fake IP/location data, social engineering urgency via phone number change notification, and a 'Secure My Account' CTA redirecting to a VirusTotal-confirmed phishing domain (amedyna.com, flagged by Kaspersky), indicating that email is a clear phishing attemp.
+
+As a result of the analysis, this email has been determined to be malicious.
+
+
+Defense Actions
+======================================
+After performing a message trace, no other users within the organization received an email from this sender or with this subject line.
+
+To prevent the malicious sender from sending any other email to the organization, I have blocked the "noreply-coinbasewalletverifiying.irs.mantab@shangriladogchew.com" email address on the email gateway.
+
+Due to the malicious nature of the domain, I have blocked any incoming emails that contain "shangriladogchew.com" on the email gateway.
+
+To ensure users are unable to access this malicious URL or domain, I have blocked "amedyna.com" on the EDR and on the Web Proxy.
+
+Report the phishing URL to Kaspersky and submit for additional vendor review on VirusTotal to increase detection coverage.
+
+Notified affected users to not click the link and to verify account status directly at coinbase.com
+
+The email has been reported to Coinbase's abuse team at security@coinbase.com.
+

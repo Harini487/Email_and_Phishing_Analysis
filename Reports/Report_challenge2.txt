@@ -1,0 +1,81 @@
+Headers
+======================================
+Date: Sun, 12 May 2024 04:10:52 +0000
+Subject: Reset your Dropbox password
+
+To: emily.nguyen@glbllogistics.co
+From: no-reply@dropbox.com
+
+Return-Path: <0101018f6aff12b2-5bcaa145-861b-45da-a06e-b5c1ee3ca941-000000@email.dropbox.com>
+
+Sender IP: 54.240.60.143
+Resolve Host: a60-143.smtp-out.us-west-2.amazonses.com 
+
+Message-ID: <0101018f6aff12b2-5bcaa145-861b-45da-a06e-b5c1ee3ca941-000000@us-west-2.amazonses.com>
+
+
+URLs
+======================================
+http://www[.]w3[.]org/1999/xhtml
+http://fonts[.]googleapis[.]com/css?family=Open
+http://www[.]w3[.]org/TR/REC-html40/loose[.]dtd
+hxxps[://]www[.]dropbox[.]com/l/AADQ493u2QLcZrv2kCW6C6i0Ac-mR0hUXxU/help/365
+hxxps[://]www[.]dropbox[.]com/l/AADiZXaA7dm2EyafvAILlHJAzwU3D55FQwg/forgot_finish
+hxxps[://]www[.]dropbox[.]com/l/AAAN2hEjsnK4UD1fkJxpXCS15vzTRW64Tjc/help/365
+hxxps[://]raw[.]githubusercontent[.]com/MalwareCube/SOC101/main/assets/01_Phishing_Analysis/dropbox[.]png
+hxxps[://]www[.]dropbox[.]com/l/ABCIzswwTTJ9--CxR05fYXX35pPA-Y0m3PY/forgot_finish
+hxxps[://]www[.]dropbox[.]com/l/AACK_ihQPkvHRxrdwgoAKiptOg-dtAhzX2Y
+
+
+Description
+======================================
+This email is claiming to be from "Dropbox", and it is for resetting the recipient's Dropbox password' .
+
+The email notifies the recipient that a password change was requested for her Dropbox account and provides a 'Reset password' button. 
+
+The email correctly addresses the recipient by first name, follows Dropbox's official template, and includes appropriate guidance to ignore the email if the reset was not requested. 
+
+No malicious content, spoofed branding, or suspicious language was identified within the body.
+
+
+Artifact Analysis
+======================================
+Sender Analysis:
+The sender address "no-reply@dropbox.com" is a verified, legitimate Dropbox domain used for official transactional emails. 
+
+The email passed all standard email authentication checks (SPF, DKIM, DMARC) as shown by PhishTool as it was generated directly by Dropbox's mail infrastructure. 
+
+No spoofing indicators were detected. The use of the recipient's actual first name ('Hi Emily') is consistent with Dropbox's personalized account notification system and not indicative of a mass phishing campaign.
+
+
+URL Analysis:
+Three URLs were identified and analyzed. The 'Reset password' button links to https://www.dropbox.com/l/AADiZXaA7dm2EyafvAILIHJAzwU3D55FQwg/forgot_finish — VirusTotal: 0/94 clean, last analyzed 2 months ago. 
+
+The 'more security tips' hyperlink resolves to https://www.dropbox.com/l/AAAN2hEjsnK4UD1fkJxpXCS15vzTRW64Tjc/help/365 — VirusTotal: 0/95 clean; Cisco Talos: Favorable, not blocklisted, categorized as Online Storage and Backup. 
+
+A third URL https://www.dropbox.com/l/ABCIzswwTTJ9--CxR05fYXX35pPA-Y0m3PY/forgot_finish — VirusTotal: 0/98 clean; Cisco Talos: Favorable. 
+
+All URLs resolve to www.dropbox.com and were confirmed clean across all intelligence sources.
+
+
+Verdict
+======================================
+This is an authentic, legitimate/genuine email Dropbox-generated password reset notification. 
+
+All sender, URL, and infrastructure indicators confirm the email originated from Dropbox's official systems. 
+
+The reset link leads only to the legitimate Dropbox platform, no credential harvesting risk exists if the link is not clicked.
+
+
+Defense Actions
+======================================
+If the reset was not requested by the recipient, ignore and delete the email as instructed by Dropbox's own message. 
+
+The recipient should log in directly to dropbox.com to verify account integrity and confirm no unauthorized access has occurred. 
+
+As a precautionary measure, enabling two-factor authentication (2FA) on the Dropbox account is strongly recommended. 
+
+No gateway blocking or URL blacklisting is warranted as all infrastructure is legitimate. 
+
+If unsolicited resets recur, consider reporting the pattern to Dropbox via abuse@dropbox.com.
+

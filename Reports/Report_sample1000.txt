@@ -1,0 +1,78 @@
+Headers
+======================================
+Date: Wed, 26 Jul 2023 17:59:01 +0000
+Subject: Liberação de IRPF - 6NwlyfzWcsNerv0
+=?utf-8?B?TGliZXJhw6fDo28gZGUgSVJQRiAtIDZOd2x5ZnpXY3NOZXJ2?=
+        =?utf-8?B?MA==?=
+
+To: phishing@pot
+From: prestonconstance587@gmail.com
+
+Reply-To: None
+Return-Path: prestonconstance587@gmail.com
+
+Sender IP: 209.85.160.178
+Resolve Host: mail-qt1-f178.google.com 
+
+Message-ID: <fe5a59263be048e994229d8d1b31df82@gmail.com>
+
+
+URLs
+======================================
+None
+
+
+Attachments
+======================================
+Attachment Name: csWuYjyqO2IR.pdf
+MD5: f1b1ac7839d2b2a1e458b5d87c7b2ca2
+SHA1: 675d61fd38fff769e4f4abf1f44cb4427d6ec3a5
+SHA256: cfc5fbc759dcc599c8329dd94f9364394c7b1e875d6ff515c7337e00fb1f30cf
+
+
+Description
+======================================
+This email is claiming to be from "Brazilian Receita Federal (IRS)", and it is claiming the recipient has an IRPF (income tax refund) credit pending.
+
+It is luring the recipient to open a malicious attachment by referencing a fabricated protocol number and a fake credit balance, exploiting trust in government tax communications.
+
+
+Artifact Analysis
+======================================
+Sender Analysis:
+The sender address "prestonconstance587@gmail.com" is a visibly valid TLD or domain 'gmail.com', indicating either a personal spam address. 
+
+No legitimate Receita Federal communication originates from gmail.com domains, the real domain is gov.br. The subject line contains a random alphanumeric token 
+(TGliZXJhw6fDo28gZGUgSVJQRiAtIDZOd2x5ZnpXY3NOZXJ2) consistent with phishing campaign tracking IDs.
+
+
+URL Analysis:
+
+
+Attachment Analysis:
+After performing a Attachment reputation check using VirusTotal, the attachment within this email was found to be malicious, as it was flagged as a Trojan.
+
+
+The malicious attachment is a PDF that could conatin embedded scripts, or disguised executables.
+
+
+Verdict
+======================================
+The email exhibits multiple critical indicators: invalid sender domain, government impersonation (Receita Federal/IRPF), social engineering via financial lure, campaign tracking token in subject, and a malicious attachment as the primary payload delivery mechanism, this email is a clear phishing attempt.
+
+As a result of the analysis, this email has been determined to be malicious.
+
+
+Defense Actions
+======================================
+After performing a message trace, no other users within the organization received an email from this sender or with this subject line.
+
+To prevent the malicious sender from sending any other email to the organization, I have blocked the "prestonconstance587@gmail.com" email address on the email gateway.
+
+The attachment was submitted to multiple sandboxes such as Hybrid Analysis, JoeSandbox and Any.run for dynamic analysis.
+
+Updated endpoint AV/EDR signatures since malware was identified
+
+All users have been alerted about IRPF-themed lures.
+
+The email has been reported to Receita Federal via safetyreport@receita.fazenda.gov.br.

@@ -1,0 +1,65 @@
+Headers
+======================================
+Date: Tue, 31 Oct 2023 10:10:04 -0900
+Subject: Your account has been flagged for unusual activity
+
+To: dderringer@mighty-solutions.net
+From: social201511138@social.helwan.edu.eg
+
+Return-Path: social201511138@social.helwan.edu.eg
+
+Sender IP: 40.107.22.60
+Resolve Host: mail-am6eur05on2060.outbound.protection.outlook.com 
+
+Message-ID: <JMrByPl2c3HBo8SctKnJ5C5Gp64sPSSWk76p4sjQ@s6>
+
+
+URLs
+======================================
+hxxps[://]0[.]232[.]205[.]92[.]host[.]secureserver[.]net/lclbluewin08812/
+
+
+Description
+======================================
+This email is claiming to be from "Microsoft Outlook Support Team", and it is warning that the recipient's account has been flagged for unusual activity.
+
+It claims that the account's online access has been disabled, and that the recipient needs to re-verify the account in order to regain access.
+
+This is a spoofed Microsoft account security alert urging the user to click a malicious link under the guise of account verification, creating urgency with a 24-hour suspension threat.
+
+
+Artifact Analysis
+======================================
+Sender Analysis:
+Although claiming to be from Microsoft Outlook, the From address clearly indicates a mailbox originating from an unrelated domain.
+
+Additionally, the Return-Path and Received headers indicate that this email originated from a mail server from Egypt and there is a University in Egypt called Helwan University which explains the .edu but when the website of the university was visited the URl for it was capu.edu.eg not helwan.edu.eg, neither of which are affiliated with Microsoft.
+
+
+URL Analysis:
+After performing a URL reputation check using URLScan and VirusTotal, the URL within the call to action button of this email was found to be malicious, as it redirects to a phishing website.
+
+It appears to be hosting a credential capture page, that when submitted, will log and steal the credentials of any victims.
+
+
+Verdict
+======================================
+Due to the original sender being unaffliated with Microsoft, this email is a clear impersonation and spoofing attempt.
+
+Additionally, after analyzing the URL contained in the email's call to action, it was flagged on URLScan and VirusTotal to be malicious. (Screenshot evidence given)
+
+As a result of the analysis, this email has been determined to be malicious.
+
+
+Defense Actions
+======================================
+After performing a message trace, no other users within the organization received an email from this sender or with this subject line.
+
+To prevent the malicious sender from sending any other email to the organization, I have blocked the "social201511138@social.helwan.edu.eg" email address on the email gateway.
+
+Due to the malicious nature of the domain, I have blocked any incoming emails that contain "0.232.205.92.host.secureserver.net" on the email gateway.
+
+To ensure users are unable to access this malicious URL or domain, I have blocked "0.232.205.92.host.secureserver.net" on the EDR and on the Web Proxy.
+
+The email has been reported to Microsoft's phishing team at phish@office365.microsoft.com.
+
